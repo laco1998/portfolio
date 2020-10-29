@@ -252,6 +252,7 @@ footer {
     padding: 20px 10px 10px 10px;
     font-size: 18px;
     text-align: center;
+    margin: 0 auto;
   }
 
   .content-wrap-footer p {
