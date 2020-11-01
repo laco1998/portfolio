@@ -277,6 +277,11 @@ footer {
   .navigation a {
     font-size: 18px;
   }
+
+  #line-break::after {
+    content: "\a";
+    white-space: pre;
+  }
 }
 
 /* -------------------------------------------------------- */
