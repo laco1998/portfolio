@@ -282,8 +282,8 @@ footer {
 /* -------------------------------------------------------- */
 
 .greeting {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 40px;
+  /* padding-top: 20px; */
 }
 
 .greeting h2 {
@@ -363,6 +363,10 @@ footer {
 
   }
 
+  .skills-section {
+    padding-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -383,4 +387,5 @@ footer {
   .skills p {
     font-size: 16px;
   }
+
 }
