@@ -342,20 +342,12 @@ footer {
   margin-top: 30px;
 }
 
-.hobbies-items {
+.hobby-name {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  width: 75%;
-  margin: 0 auto;
-  margin-top: 40px;
-  grid-column-gap: 100px;
-  grid-row-gap: 70px;
 }
 
-.hobby-name {
+.hobby-name img {
   justify-self: center;
-  align-self: center;
 }
 
 .hobby-name h3 {
@@ -396,6 +388,17 @@ footer {
     padding-bottom: 20px;
   }
 
+  .hobbies-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+  }
+
 }
 
 @media screen and (max-width: 769px) {
@@ -415,6 +418,14 @@ footer {
 
   .skills p {
     font-size: 16px;
+  }
+
+  .hobby-name {
+    padding-bottom: 50px;
+  }
+
+  .hobbies h2 {
+    line-height: 2;
   }
 
 }
