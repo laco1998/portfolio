@@ -8,8 +8,7 @@ white - #eaeaea
 orange - #ee6f57
 */
 
-/* Global styles
--------------------------*/
+/* Global styles -------------------------*/
 html {
   box-sizing: border-box;
 }
@@ -40,7 +39,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 2;
 }
 
@@ -49,13 +48,17 @@ h2 {
 }
 
 h1, h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 400;
   margin: 0;
 }
 
 h3 {
   margin-bottom: 0;
+}
+
+p a {
+  font-family: 'Raleway', sans-serif;
 }
 
 .item-details h3 + p {
@@ -71,12 +74,7 @@ h3 {
   padding: 20px;
 }
 
-.content-wrap-header-footer {
-
-}
-
-/* Profile
--------------------------*/
+/* Profile -------------------------*/
 header {
   background: #f1f3f8;
   color: #8d93ab;
@@ -100,12 +98,6 @@ header {
   position: relative;
 }
 
-/*.navigation a:hover {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  padding-bottom: 3px;
-}*/
-
 .navigation a::before {
   content: "";
   position: absolute;
@@ -124,8 +116,30 @@ header {
   transform: scaleX(1);
 }
 
-/* Projects
--------------------------*/
+/* Projects -------------------------*/
+.greet {
+
+}
+
+.greet h1 {
+  font-size: 32px;
+}
+
+.underline {
+  /* text-decoration: underline; */
+  border-bottom: 5px solid black;
+}
+
+.underline:hover {
+  background: #ee6f57;
+  border-bottom: 0px solid black;
+  color: #f1f3f8;
+  padding: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* Projects -------------------------*/
 .projects {
   background: #f1f3f8;
 }
@@ -137,20 +151,12 @@ header {
 .projects .btn {
   color: #ee6f57;
   font-size: 18px;
-  /* background: #ee6f57; */
-  /* text-decoration: none; */
-  /* padding: 8px; */
-  /* border-radius: 4px; */
   display: inline-block;
 }
 
 .projects .soon {
   color: #59606d;
   font-size: 18px;
-  /* background: #ee6f57; */
-  /* text-decoration: none; */
-  /* padding: 8px; */
-  /* border-radius: 4px; */
   display: inline-block;
   text-decoration: none;
 }
@@ -172,8 +178,7 @@ header {
   margin-bottom: 50px;
 }
 
-/* Contact
--------------------------*/
+/* Contact -------------------------*/
 footer {
   background: #f1f3f8;
   color: #8d93ab;
@@ -206,13 +211,7 @@ footer {
   padding-left: 10px;
 }
 
-/*#item-two {
-  border-right: 1px #8d93ab solid;
-
-}*/
-
-/* Responsive
--------------------------*/
+/* Responsive -------------------------*/
 @media screen and (min-width: 770px) {
   .project-item img {
     float: left;
@@ -228,6 +227,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .greet {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
   }
 
   .content-wrap {
@@ -256,6 +262,21 @@ footer {
     margin: 0 auto;
   }
 
+  .greet {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .greet h1 {
+    font-size: 22px;
+    padding: 0 0;
+    text-align: left;
+  }
+
+  .underline {
+    border-bottom: 3px solid black;
+  }
+
   .content-wrap-footer p {
     text-align: center;
     padding: 10px 70px;
@@ -279,33 +300,16 @@ footer {
   }
 }
 
-/* -------------------------------------------------------- */
-
-.greeting {
-  margin-top: 40px;
-  /* padding-top: 20px; */
-}
-
-.greeting h2 {
-  text-align: center;
-  background: #d6e0f0;
-  font-size: 40px;
-  padding: 50px 25px;
-  font-weight: 700;
-}
-
-.greeting img {
-  width: 100%;
-}
+/* --------------------------------------------------------
+---------- ABOUT PAGE */
 
 /* ----- INTRODUCTION ----- */
-
 .introduction {
   display: grid;
-  width: 75%;
+  width: 60%;
   text-align: left;
   margin: 0 auto;
-  padding: 60px 10px 40px 10px;
+  padding: 40px 10px 40px 10px;
 }
 
 .intorduction h2 {
@@ -318,9 +322,8 @@ footer {
 }
 
 /* ----- SKILLS ----- */
-
 .skills {
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
   line-height: 2;
   background: #d6e0f0;
@@ -339,9 +342,8 @@ footer {
 }
 
 /* ----- HOBBIES ----- */
-
 .hobbies h2 {
-  width: 75%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -360,34 +362,7 @@ footer {
 }
 
 /* ----- RESPONSIVE ----- */
-
 @media screen and (min-width: 770px) {
-  .greeting {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 100%;
-    margin-top: 60px;
-    background: #d6e0f0;
-    justify-content: center;
-  }
-
-  .greeting h2 {
-    justify-self: center;
-    align-self: center;
-    font-size: 50px;
-    font-weight: 700;
-  }
-
-  .greeting img {
-    justify-self: right;
-    align-self: center;
-    width: 100%;
-  }
-
-  .skills {
-
-  }
-
   .skills-section {
     padding-bottom: 20px;
   }
@@ -400,18 +375,30 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
     margin-top: 40px;
-    grid-column-gap: 100px;
+    grid-column-gap: 80px;
     grid-row-gap: 70px;
+  }
+
+  .hobby-name {
+    padding: 10px 0;
+  }
+
+  .hobby-name:hover {
+    background-color: #d6e0f0;
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: 0.5s;
   }
 
 }
 
 @media screen and (max-width: 769px) {
   .introduction {
-    padding: 60px 0;
+    padding: 30px 0 60px 0;
+    width: 75%;
   }
 
   .introduction p {
@@ -434,6 +421,7 @@ footer {
 
   .hobbies h2 {
     line-height: 2;
+    margin-left: 40px;
   }
 
 }
