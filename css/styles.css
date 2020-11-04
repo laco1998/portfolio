@@ -127,7 +127,8 @@ header {
 
 .underline {
   /* text-decoration: underline; */
-  border-bottom: 5px solid black;
+  border-bottom: 4px solid black;
+  transition: 0.5s;
 }
 
 .underline:hover {
