@@ -1,11 +1,9 @@
 /*
 COLOR PALETTE
-even lighter green - #f0fff3
-light green - #c6f1e7
-darker green - #137083
-gray - #59606d
-white - #eaeaea
+black - #393b44
+white - #f1f3f8
 orange - #ee6f57
+
 */
 
 /* Global styles -------------------------*/
@@ -301,10 +299,19 @@ footer {
   }
 }
 
-/* --------------------------------------------------------
+/* -----------------------------------------------------------------------------
 ---------- ABOUT PAGE */
 
 /* ----- INTRODUCTION ----- */
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+.photo img {
+  border-radius: 50%;
+}
+
 .introduction {
   display: grid;
   width: 60%;
@@ -344,7 +351,6 @@ footer {
 
 /* ----- HOBBIES ----- */
 .hobbies h2 {
-  width: 50%;
   margin: 0 auto;
   margin-top: 30px;
 }
@@ -364,23 +370,30 @@ footer {
 
 /* ----- RESPONSIVE ----- */
 @media screen and (min-width: 770px) {
+  .photo img {
+    width: 20%;
+  }
+
   .skills-section {
     padding-bottom: 20px;
   }
 
   .hobbies {
     padding-bottom: 30px;
+    width: 60%;
+    margin: 0 auto;
   }
 
   .hobbies-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     margin-top: 40px;
-    grid-column-gap: 80px;
+    grid-column-gap: 100px;
     grid-row-gap: 70px;
+    justify-content: center;
   }
 
   .hobby-name {
