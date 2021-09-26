@@ -1,84 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laco || UX Designer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Voces&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+
+    <script src="Script/myScript.js"></script>
   </head>
+
+  <header>
+    <div class="navbar">
+      <div onclick="home();" class="logo">
+        <h1>LU</h1>
+      </div>
+
+      <div class="menu">
+        <a href="#myWork" id="work">Work</a>
+        <a href="about.html" id="about">About</a>
+        <a href="#contactMe" id="contact">Contact</a>
+      </div>
+
+    </div>
+  </header>
+
   <body>
-    <main>
-      <!-- ***************  NAVIGATION  **************** -->
-      <header>
-        <div class="content-wrap-header">
-          <h1>Laco U</h1>
+    <section>
+      <div class="intro">
+        <h1>Hello, I am <span id="red">Laco</span>!</h1>
+        <h2>A young UX designer based in The Netherlands</h2>
+      </div>
 
-          <ul class="navigation">
-            <li><a href="index.html">PORTFOLIO</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+      <div class="scroll">
+        <img id="arrow" src="Images/scroll.svg" width="90" height="90">
+      </div>
+    </section>
+
+    <section id="myWork" class="work">
+
+      <div class="myProjects">
+        <div onclick="visitUnirecycle('unirecycle.html');" class="project">
+          <h2>Reducing waste at the University of Amsterdam</h2>
+          <img src="Images/mainProject.png" width="250" height="187.5">
         </div>
-      </header>
 
-      <!-- ************ GREETING  ************** -->
-      <section class="greet">
-        <h1>Hi, nice to meet you! 👋<br> I am Laco and I am a young <span class="underline">UX Designer</span> based in <span class="underline">The Netherlands</span>.</h1>
-      </section>
-
-      <!-- ************ PROJECTS / PORTFOLIO  ************** -->
-      <section class="projects">
-        <div class="content-wrap">
-
-          <!-- Project 1 -->
-          <section class="project-item" id="project-margin">
-            <img src="images/university.jpg" alt="Vector of a university">
-            <h3>UvA Waste Management Project</h3>
-            <p>Reducing waste at the University of Amsterdam</p>
-            <a class="btn soon" href="" target="_blank">Coming soon</a>
-          </section>
-
-          <!-- Project 2 -->
-          <section class="project-item" id="project-margin">
-            <img src="images/doctors.jpg" alt="Vector of a doctor">
-            <h3>Jitsi.org for Doctors</h3>
-            <p>Helping doctors to communicate during the pandemic</p>
-            <a class="btn" href="https://xd.adobe.com/view/73914ff5-217f-44c6-6362-99e5b1ec6352-05a0/?fullscreen" target="_blank">View the prototype</a>
-          </section>
-
-          <!-- Project 3 -->
-          <section class="project-item" id="project-margin">
-            <img src="images/headphones.jpg" alt="Vector of headphones">
-            <h3>Nervous Maker Pro</h3>
-            <p>Learning languages in a brand new way</p>
-            <a class="btn" href="https://youtu.be/rgz1gSZW0ck" target="_blank">Watch the video</a>
-          </section>
-
-          <!-- Project 4 -->
-          <section class="project-item">
-            <img src="images/gift.jpg" alt="The Wire Ipsum website">
-            <h3>Digital Unwrapping for Hallmark</h3>
-            <p>Gift unwrapping done differently</p>
-            <a class="btn" href="https://xd.adobe.com/view/5408bfed-8f05-4637-84e5-6a8b30f20f20-015b/?fullscreen" target="_blank">View the prototype</a>
-          </section>
+        <div onclick="visitTomorrowToday('tomorrowtoday.html');" class="project">
+          <h2>Helping caretakers to explore new technology</h2>
+          <img src="Images/ipse.png" width="250" height="187.5">
         </div>
-      </section>
 
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-        <div class="content-wrap-footer">
-
-          <!-- Social media and contact links. Add or remove any networks. -->
-          <ul class="contact-list">
-            <li id="item-one"><a href="mailto:laco.uncovsky@gmail.com">laco.uncovsky@gmail.com</a></li>
-            <li id="item-two"><a href="https://www.linkedin.com/in/ladislav-un%C4%8Dovsk%C3%BD-3177b4176/" target="_blank">LinkedIn</a></li>
-          </ul>
-
-          <div>
-            <p>Website design and content &copy; 2020 Ladislav Unčovský</p>
-          </div>
+        <div onclick="visitJitsi('jitsi.html');" class="project">
+          <h2>Making online collaboration simple</h2>
+          <img src="Images/jitsi.png" width="250" height="187.5">
         </div>
-      </footer>
-    </main>
+      </div>
+
+    </section>
+
   </body>
+
+  <footer>
+
+    <div id="contactMe" class="contact">
+      <h2>Let's get in touch! 🤙</h2>
+      <p>I am currently looking for a 6-months long graduation internship starting in February 2022</p>
+      <a href="mailto:laco.uncovsky@gmail.com">laco.uncovsky@gmail.com</a>
+    </div>
+
+    <div class="credits">
+      <p id="credits">Coded with &#129505; by me</p>
+    </div>  
+
+  </footer>
 </html>

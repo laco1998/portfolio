@@ -2,99 +2,66 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laco || About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Portfolio | About</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Voces&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans&display=swap" rel="stylesheet">
+
+    <script src="Script/myScript.js"></script>
   </head>
+
+  <header>
+    <div class="navbar">
+      <div onclick="home();" class="logo">
+        <h1>LU</h1>
+      </div>
+
+      <div class="menu">
+        <a href="index.html#myWork" id="work">Work</a>
+        <a href="about.html" id="about">About</a>
+        <a href="#contactMe" id="contact">Contact</a>
+      </div>
+
+    </div>
+  </header>
+
   <body>
-    <main>
-        <!-- ********** NAVIGATION ********** -->
-        <header>
-          <div class="content-wrap-header">
-            <h1>Laco U</h1>
 
-            <ul class="navigation">
-              <li><a href="index.html">PORTFOLIO</a></li>
-              <li><a href="about.html">ABOUT</a></li>
-          </div>
-        </header>
+    <div class="aboutMe">
 
-        <!-- ********** INTRODUCTION ********** -->
-        <section>
-          <div class="photo">
-            <img src="images/portrait.jpg">
-          </div>
-          <div class="introduction">
-            <h2>A few words about me...</h2>
-            <p>Ladislav Uncovsky. This is my whole name, but everyone just calls me Laco. Not sure how to say it? No worries, it’s simply /la-tzo/.</p>
-            <p>I was born and raised in the heart of Europe – Slovakia, although now you can spot me biking or munching on stroopwafels in The Netherlands. As a second-year undergraduate student at THUAS, I am now gaining hands on experience as an intern. Working at the <b>Digital Society School</b> in Amsterdam made me realize how as an UX designer I can help solve global challenges. As an example, I can use my current project, where me together with my team are working on a project in the lights of UN Sustainable Development Goals. The project is about reducing waste at the University of Amsterdam, you can read more about it <span>here</span>.</p>
-            <p>In the past year, I was also gaining experience as an intern in a design studio located in Bratislava called <b>Lighting Beetle</b>, where I was helping on projects for clients such as Orange, HB Reavis or Asseco.</p>
-          </div>
-        </section>
+      <div class="shortIntroduction">
+        <h1>Hey, it's <span id="red">Laco</span>!</h1>
+        <p>I am a third-year user experience design student at The Hague
+           University of Applied Sciences. Before moving to The Netherlands from
+           Slovakia, I was a professional tennis player. Being a professional
+           athlete gave me self-discipline, time management skills, but it also
+           taught me how to work with other people.<br><br>
 
-        <!-- ********** SKILLS ********** -->
-        <section class="skills-section">
-          <div class="skills">
-            <h2>Skills 🖋</h2>
-            <p>Throughout my studies of User Experience Design, I have had the chance to look
-              into all parts of design thinking process and further utilize said parts in numerous
-              group work.<br><br> For instance, when working on project – Design for Emotion, I have
-              successfully implemented all steps of design thinking process, while particularly focusing on
-              prototyping.<br><br> As I am particularly intrigued by prototyping, beyond my university
-              studies, I am further extending my skills by following a Adobe XD Challenges course.
-              Hence, I believe I am quite experienced with low to high fidelity designing and
-              prototyping, which is reflected in excellent project grades.<br><br> Both in school and my free
-              time I am learning programming languages such as HTML/CSS or JavaScript. The basic knowledge of previously mentioned languages, allows me to
-              have clearer perception of technologies, surrounding us.</p>
-          </div>
-        </section>
+           During my time at the university, I managed to do two internships,
+           start my freelancing career on Upwork, and even work on my very own
+           sustainability app for both of the biggest Amsterdam universities.</p>
+      </div>
 
-        <!-- ********** HOBBIES ********** -->
-        <section class="hobbies">
-          <h2>Hobbies</h2>
-          <div class="hobbies-items">
+      <div class="aboutMePhoto">
+        <img src="Images/me.png" width="720" height="400">
+      </div>
 
-            <div class="hobby-name">
-              <img src="images/tennis.png">
-              <h3>Tennis</h3>
-            </div>
+    </div>
 
-            <div class="hobby-name">
-              <img src="images/yoga.png">
-              <h3>Yoga</h3>
-            </div>
-
-            <div class="hobby-name">
-              <img src="images/tech.png">
-              <h3>Tech & Development</h3>
-            </div>
-
-            <div class="hobby-name">
-              <img src="images/eco.png">
-              <h3>Sustainability</h3>
-            </div>
-
-          </div>
-        </section>
-
-        <!-- ********** FOOTER ********** -->
-        <footer>
-          <div class="content-wrap-footer">
-
-            <!-- Social media and contact links. Add or remove any networks. -->
-            <ul class="contact-list">
-              <li id="item-one"><a href="mailto:laco.uncovsky@gmail.com">laco.uncovsky@gmail.com</a></li>
-              <li id="item-two"><a href="https://www.linkedin.com/in/ladislav-un%C4%8Dovsk%C3%BD-3177b4176/" target="_blank">LinkedIn</a></li>
-            </ul>
-
-            <div>
-              <p>Website design and content &copy; 2020 Ladislav Unčovský</p>
-            </div>
-          </div>
-        </footer>
-
-    </main>
   </body>
+
+  <footer>
+    <div id="contactMe" class="contact">
+      <h2>Let's get in touch! 🤙</h2>
+      <p>I am currently looking for a 6-months long graduation internship starting in February 2022</p>
+      <a href="mailto:laco.uncovsky@gmail.com">laco.uncovsky@gmail.com</a>
+    </div>
+  </footer>
 </html>

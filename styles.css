@@ -1,0 +1,354 @@
+/* COLOURS
+
+  - white (background): #F9F7F7
+  - grey (background): #E1E5EA
+  - dark blue (text): #343F56
+  - grey (text): #343F56
+  - red (contrast): #FF616D
+
+*/
+
+html {
+  background-color: #F9F7F7;
+}
+
+header a {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body h1 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+body h2 {
+  /* font-family: 'Voces', cursive; */
+  font-family: 'PT Sans', sans-serif;
+}
+
+body h3 {
+  font-family: 'Martel Sans', sans-serif;
+}
+
+body p {
+  font-family: 'Martel Sans', sans-serif;
+}
+
+body button {
+  font-family: 'Voces', cursive;
+}
+
+footer h2 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+footer p {
+  font-family: 'Martel Sans', sans-serif;
+}
+
+footer a {
+  font-family: 'Voces', cursive;
+}
+
+/* ---------- NAVIGATION BAR ---------- */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 80px 80px 0 80px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+  flex-grow: 2;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.logo h1 {
+  font-size: 40px;
+}
+
+.menu a {
+  font-size: 22px;
+  color: #343F56;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.menu a:hover {
+  color: #FF616D;
+  transition-duration: 0.4s;
+}
+
+/* ---------- INTRODUCTION ---------- */
+
+body h1 {
+  font-size: 72px;
+  color: #343F56;
+  margin: 0;
+}
+
+body h2 {
+  font-size: 36px;
+  color: #343F56;
+  margin-top: 16px;
+  font-weight: 300;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 150px;
+}
+
+#red {
+  color: #FF616D;
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  margin: 180px 0 0 0;
+  transform: rotate();
+}
+
+/* ---------- WORK ---------- */
+
+.myProjects {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 0 0;
+  gap: 80px;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin: 0 120px 0 120px;
+  padding: 80px 120px 80px 120px;
+  box-shadow: 0px 2px 5px 2px #00000026;
+  border-radius: 8px;
+  transition-duration: 1.5s;
+}
+
+.project h2 {
+  width: 45%;
+  /*margin: 0 160px 0 0;*/
+}
+
+.project:hover {
+  transform: scale(1.1);
+  transition-duration: 1.5s;
+}
+
+/* ---------- CONTACT ---------- */
+
+footer {
+  background-color: #343F56;
+  margin-top: 80px;
+}
+
+footer h2 {
+  color: #F9F7F7;
+  padding: 60px 0 0 160px;
+  font-size: 48px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+footer p {
+  font-size: 16px;
+  padding-left: 160px;
+  font-weight: 300;
+  color: #F9F7F7;
+  width: 370px;
+  line-height: 28px;
+  margin: 24px 0 0 0;
+}
+
+footer a {
+  display: inline-block;
+  margin: 40px 0 20px 160px;
+  padding: 24px 90px 24px 90px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #F9F7F7;
+  color: #343F56;
+  text-decoration: none;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+footer a:hover {
+  background-color: #FF616D;
+  color: #F9F7F7;
+  transition-duration: 0.5s;
+}
+
+.credits {
+  padding: 0 0 20px 0;
+}
+
+
+/* ---------- ABOUT PAGE ---------- */
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 80px 0 80px;
+  gap: 100px;
+}
+
+.shortIntroduction h1 {
+  font-size: 32px;
+}
+
+.aboutMePhoto img {
+  border-radius: 8px;
+}
+
+/* ---------- UNIRECYCLE PAGE ---------- */
+
+.projectInformation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.aboutProject {
+  margin-top: 60px;
+  margin-left: 80px;
+}
+
+.aboutProject h1 {
+  font-size: 48px;
+}
+
+.aboutProject p {
+  width: 640px;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.projectOverview {
+  margin-top: 60px;
+  margin-right: 80px;
+  color: #F9F7F7;
+  background-color: #343F56;
+  border-radius: 8px;
+  padding: 24px 0 24px 40px;
+  width: 400px;
+  height: auto;
+}
+
+.projectOverview h2 {
+  color: #F9F7F7;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 12px;
+}
+
+.projectOverview p {
+  font-weight: 400;
+}
+
+#margin {
+  margin-top: 40px;
+}
+
+.coverPhoto {
+  display: flex;
+  justify-content: center;
+  margin: 80px 80px 0 80px;
+}
+
+.coverPhoto img {
+  width: 100%;
+  height: 320px;
+  border-radius: 8px;
+}
+
+.additionalInfo button {
+  width: 440px;
+  font-size: 20px;
+  margin-top: 30px;
+  padding: 24px;
+  border-radius: 8px;
+  color: #F9F7F7;
+  background-color: #FF616D;
+  border: 0;
+  cursor: pointer;
+  font-weight: 500;
+  transition-duration: 0.5s;
+}
+
+.additionalInfo button:hover {
+  background-color: #E7313F;
+  transition-duration: 0.5s;
+}
+
+/* ---------- JITSI ---------- */
+
+.projectIntro h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 80px 120px 0 120px;
+}
+
+.projectContent {
+  display: flex;
+  gap: 240px;
+  margin: 80px 120px 0 120px;
+}
+
+.myRole {
+  display: flex;
+  flex-direction: column;
+}
+
+.myRole h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.myRole p {
+  font-size: 24px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+}
+
+.results h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.results p {
+  font-size: 24px;
+}
+
+.projectCover img {
+  margin: 80px 0 0 0;
+}
+
+.projectCover video {
+  margin: 80px 0 0 0;
+}
+
+.projectAbout p {
+  font-size: 24px;
+  margin: 80px 120px 0 120px;
+}
